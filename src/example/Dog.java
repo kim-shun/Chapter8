@@ -1,6 +1,6 @@
 package example;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Pet {
 	public Dog(String name, int age) {
 		setName(name);
 		setAge(age);
@@ -8,22 +8,26 @@ public class Dog extends Animal {
 		System.out.println("  引数:name" + name + ", age = " + age);
 	}
 	
+	@Override
 	public void eat() {
 		eat("ご飯");
 	}
 	
+	@Override
 	public void eat(String food) {
 		printMessage(food + "を食べるよ！おいしいワン");
 		printMessage("お腹が一杯になったワン");
 		setHungry(false);
 	}
 
+	@Override
 	public void playToy(String toy) {
 		printMessage(toy + "で遊ぶよ。おいしいワン");
 		printMessage("お腹が一杯になったワン");
 		setHungry(true);
 	}
 	
+	@Override
 	public void playToy() {
 		playToy("おもちゃ");
 	}
