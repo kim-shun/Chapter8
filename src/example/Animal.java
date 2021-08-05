@@ -5,6 +5,14 @@ public class Animal {
 	private int age;
 	private boolean hungry;
 	
+	public Animal(String name, int age) {
+		this.name = name;
+		this.age = age;
+		
+		System.out.println("コンストラクター:Animal(String name, int age)が呼び出された");
+		System.out.println("  引数:name = " + name + ", age = " + age);
+	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
