@@ -29,7 +29,7 @@ public class Animal {
 		return hungry;
 	}
 	
-	public void printMessage(String message) {
+	protected void printMessage(String message) {
 		System.out.println(name + "> " + message);
 	}
 
