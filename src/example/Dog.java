@@ -2,8 +2,7 @@ package example;
 
 public class Dog extends Animal implements Pet {
 	public Dog(String name, int age) {
-		setName(name);
-		setAge(age);
+		super(name, age);
 		System.out.println("コンストラクター:Dog(String name, int age)が呼び出された");
 		System.out.println("  引数:name" + name + ", age = " + age);
 	}
